@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+  }
+
+  .dashboard {
+    display: grid;
+    width: 800px;
+    height: 600px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "title title title title"
+        "population welcome welcome welcome"
+        "gdp code govt news";
+    gap: 1rem;
+  }
+
+  .title {
+    grid-area: title;
+    color: black;
+  }
+
+  .population {
+    grid-area: population;
+    grid-gap: 1rem;
+    background-image: url('./images/finland-8.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    padding-left: 1rem;
+  }
+
+  .welcome {
+    grid-area: welcome;
+    background-image: url('./images/finland-2.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+
+  .gdp {
+    grid-area: gdp;
+    background-image: url('./images/finland-3.jpg');
+     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    padding-right: 1rem; 
+  }
+
+  .code {
+    grid-area: code;
+    background-image: url('./images/finland-4.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 1rem;
+    padding-left: 1rem;
+  }
+
+  .govt {
+    grid-area: govt;
+    background-image: url('./images/finland-1.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding-bottom: 1rem;
+    padding-left: 1rem; 
+  }
+
+  .news {
+    grid-area: news;
+    background-image: url('./images/finland-5.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    text-align: left;
+    align-items: left;
+    padding: 1rem;
+  }
+
+ h2, p {
+    margin: 0;
+    padding: 0;
+ }
+
+ .news button {
+    align-self: flex-end;
+ }
+
+ .govt p {
+    text-align: left;
+ }
+
+ .news h2,
+ .news label,
+ .news input {
+ margin-bottom: 1rem;
+ }
+
+
